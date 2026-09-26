@@ -14,8 +14,8 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="container">
-        <a href="#home" class="logo">Azim Raza</a>
+      <div class="container nav-container">
+        <a href="#home" class="nav-logo"> Azim Raza </a>
 
         <div class="nav-links">
           <a href="#about">About</a>
@@ -23,6 +23,7 @@
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -30,28 +31,37 @@
 
     <!-- Hero -->
     <section id="home" class="hero">
-      <div class="container">
-        <p class="hero-label">HELLO, I'M</p>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-label">HELLO, I'M</p>
 
-        <h1>Azim Raza</h1>
+          <h1>Azim Raza</h1>
 
-        <h2>Python Developer | Data Analyst | Machine Learning</h2>
+          <h2>
+            Python Developer
+            <span>|</span>
+            Data Analyst
+            <span>|</span>
+            Machine Learning
+          </h2>
 
-        <p class="hero-description">
-          I build data-driven applications, analyze business problems, and
-          develop practical machine learning solutions using Python.
-        </p>
+          <p class="hero-description">
+            B.Tech CSE graduate with a strong foundation in Python, SQL, Data
+            Analytics, and Machine Learning. I build practical data-driven
+            applications and ML solutions.
+          </p>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary"> View Projects </a>
 
-          <a
-            href="{% static 'resume/Azim_Raza_Resume.pdf' %}"
-            class="btn btn-secondary"
-            target="_blank"
-          >
-            Download Resume
-          </a>
+            <a
+              href="{% static 'resume/Azim_Raza_Resume.pdf' %}"
+              class="btn btn-secondary"
+              target="_blank"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -60,14 +70,50 @@
     <section id="about" class="section">
       <div class="container">
         <p class="section-label">ABOUT ME</p>
-        <h2>Turning data into practical solutions.</h2>
 
-        <p>
-          I am a B.Tech Computer Science graduate with a strong interest in
-          Python, SQL, Data Analytics and Machine Learning. I enjoy working with
-          data, building analytical solutions, and developing applications that
-          solve real-world problems.
-        </p>
+        <h2>Building Practical Data & ML Solutions</h2>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a B.Tech Computer Science graduate with a strong foundation
+              in Python, SQL, Data Analytics, and Machine Learning.
+            </p>
+
+            <p>
+              I enjoy working with data to clean, analyze, visualize, and build
+              machine learning solutions for practical problems.
+            </p>
+
+            <p>
+              My projects include analytics platforms, fraud and suspicious
+              transaction monitoring, disease prediction, and computer vision
+              applications.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <h3>Python</h3>
+              <p>Development & Data Analysis</p>
+            </div>
+
+            <div class="highlight-card">
+              <h3>SQL</h3>
+              <p>Data Querying & Analysis</p>
+            </div>
+
+            <div class="highlight-card">
+              <h3>Machine Learning</h3>
+              <p>Predictive & Analytical Solutions</p>
+            </div>
+
+            <div class="highlight-card">
+              <h3>Data Analytics</h3>
+              <p>EDA, Visualization & Insights</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -75,6 +121,7 @@
     <section id="skills" class="section">
       <div class="container">
         <p class="section-label">SKILLS</p>
+
         <h2>Technical Skills</h2>
 
         <div class="skills-grid">
@@ -234,24 +281,56 @@
     <section id="experience" class="section">
       <div class="container">
         <p class="section-label">EXPERIENCE</p>
-        <h2>Experience</h2>
 
-        <div class="experience-item">
-          <h3>Python / Data Science Intern</h3>
-          <h4>Softpro India Computer Technologies Pvt. Ltd.</h4>
-          <p>
-            Worked with Python, data analysis and machine learning concepts
-            while developing analytical solutions.
-          </p>
-        </div>
+        <h2>Internship Experience</h2>
 
-        <div class="experience-item">
-          <h3>Web Developer Intern</h3>
-          <h4>Internship Fusion</h4>
-          <p>
-            Worked on web development using HTML, CSS, JavaScript and related
-            technologies.
-          </p>
+        <div class="experience-list">
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Python / Data Science Intern</h3>
+                <h4>Softpro India Computer Technologies Pvt. Ltd.</h4>
+              </div>
+
+              <span>Jul 2025 – Aug 2025</span>
+            </div>
+
+            <p>
+              Worked with Python and data science techniques on practical
+              analytics and machine learning tasks, including data
+              preprocessing, exploratory data analysis, predictive modeling, and
+              visualization.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Data Science</span>
+              <span>Machine Learning</span>
+              <span>Data Analysis</span>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Web Developer Intern</h3>
+                <h4>Internship Fusion</h4>
+              </div>
+
+              <span>Sep 2024 – Oct 2024</span>
+            </div>
+
+            <p>
+              Worked on web development tasks and gained practical experience in
+              building and maintaining web-based applications.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -260,12 +339,20 @@
     <section id="education" class="section">
       <div class="container">
         <p class="section-label">EDUCATION</p>
+
         <h2>Education</h2>
 
-        <div class="education-item">
-          <h3>B.Tech — Computer Science & Engineering</h3>
-          <p>Ashoka Institute of Technology and Management, Varanasi</p>
-          <span>CGPA: 7.9</span>
+        <div class="education-card">
+          <div class="education-header">
+            <div>
+              <h3>B.Tech — Computer Science & Engineering</h3>
+              <h4>Ashoka Institute of Technology and Management, Varanasi</h4>
+            </div>
+
+            <span>2022 – 2026</span>
+          </div>
+
+          <p class="education-grade">CGPA: <strong>7.9</strong></p>
         </div>
       </div>
     </section>
@@ -274,20 +361,21 @@
     <section id="certifications" class="section">
       <div class="container">
         <p class="section-label">CERTIFICATIONS</p>
+
         <h2>Certifications</h2>
 
         <div class="certifications-grid">
-          <div class="cert-card">
+          <div class="certification-card">
             <h3>SQL (Intermediate)</h3>
             <p>HackerRank</p>
           </div>
 
-          <div class="cert-card">
+          <div class="certification-card">
             <h3>SQL (Basic)</h3>
             <p>HackerRank</p>
           </div>
 
-          <div class="cert-card">
+          <div class="certification-card">
             <h3>Python (Basic)</h3>
             <p>HackerRank</p>
           </div>
@@ -296,34 +384,66 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section">
       <div class="container">
         <p class="section-label">CONTACT</p>
-        <h2>Let's connect.</h2>
 
-        <p>Interested in working together or discussing an opportunity?</p>
+        <h2>Let's Connect</h2>
+
+        <p class="contact-intro">
+          I'm open to opportunities in Python Development, Data Analytics,
+          Machine Learning, and related roles.
+        </p>
 
         <div class="contact-links">
-          <a href="mailto:azimraza4213@gmail.com">Email</a>
+          <a href="mailto:azimraza4213@gmail.com"> Email </a>
+
           <a
             href="https://github.com/AzimRaza"
             target="_blank"
             rel="noopener noreferrer"
-            >GitHub</a
           >
+            GitHub
+          </a>
+
           <a
-            href="https://www.linkedin.com/in/azim-raza-86ab05293/"
+            href="https://www.linkedin.com/in/AzimRaza"
             target="_blank"
             rel="noopener noreferrer"
-            >LinkedIn</a
           >
+            LinkedIn
+          </a>
         </div>
       </div>
     </section>
 
+    <a href="#home" class="back-to-top"> ↑ Back to Top </a>
+
     <!-- Footer -->
-    <footer>
-      <p>© 2026 Azim Raza. All rights reserved.</p>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Azim Raza. All rights reserved.</p>
+
+        <div class="footer-links">
+          <a
+            href="https://github.com/AzimRaza"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/azim-raza-86ab05293/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a href="mailto:azimraza4213@gmail.com"> Email </a>
+        </div>
+      </div>
     </footer>
 
     <script src="{% static 'js/script.js' %}"></script>

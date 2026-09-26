@@ -399,6 +399,20 @@ a {
   color: var(--white);
 }
 
+.back-to-top {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 30px;
+  color: var(--beaver);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-to-top:hover {
+  color: var(--rose-quartz);
+}
+
 /* ================================
    FOOTER
    ================================ */
@@ -458,5 +472,24 @@ footer {
 
   .hero h1 {
     font-size: 55px;
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
   }
 }
