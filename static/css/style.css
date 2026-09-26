@@ -153,6 +153,21 @@ a {
   flex-wrap: wrap;
 }
 
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--pale-dogwood);
+  box-shadow: 0 15px 35px rgba(51, 45, 43, 0.15);
+}
+
 /* ================================
    BUTTONS
    ================================ */
@@ -491,5 +506,26 @@ footer {
 
   .nav-links a {
     font-size: 14px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
   }
 }
