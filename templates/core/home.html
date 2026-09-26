@@ -1,0 +1,331 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Azim Raza | Python Developer & Data Analyst</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" class="logo">Azim Raza</a>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="hero-label">HELLO, I'M</p>
+
+        <h1>Azim Raza</h1>
+
+        <h2>Python Developer | Data Analyst | Machine Learning</h2>
+
+        <p class="hero-description">
+          I build data-driven applications, analyze business problems, and
+          develop practical machine learning solutions using Python.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+
+          <a
+            href="{% static 'resume/Azim_Raza_Resume.pdf' %}"
+            class="btn btn-secondary"
+            target="_blank"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-label">ABOUT ME</p>
+        <h2>Turning data into practical solutions.</h2>
+
+        <p>
+          I am a B.Tech Computer Science graduate with a strong interest in
+          Python, SQL, Data Analytics and Machine Learning. I enjoy working with
+          data, building analytical solutions, and developing applications that
+          solve real-world problems.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-label">SKILLS</p>
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Programming</h3>
+            <p>Python, SQL</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Data Science</h3>
+            <p>
+              Data Cleaning, Data Preprocessing, EDA, Feature Engineering,
+              Predictive Analytics
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Data Analysis & Visualization</h3>
+            <p>Advanced Excel, NumPy, Pandas, Matplotlib, Seaborn</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>AI / Machine Learning</h3>
+            <p>Machine Learning, Scikit-learn, AI Fundamentals</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Frameworks</h3>
+            <p>Django, Streamlit</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Databases</h3>
+            <p>MySQL, SQLite</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-label">PROJECTS</p>
+        <h2>Featured Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Analytics Hub -->
+          <div class="project-card">
+            <h3>Analytics Hub</h3>
+
+            <p>
+              AI-powered educational and business analytics platform built with
+              Python and Streamlit. Includes course recommendation, business
+              forecasting, student performance analysis, and placement
+              analytics.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Scikit-learn</span>
+              <span>Streamlit</span>
+            </div>
+
+            <a
+              href="https://github.com/AzimRaza/Analytics-Hub"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub →
+            </a>
+          </div>
+
+          <!-- Suspicious Transaction Monitoring -->
+          <div class="project-card">
+            <h3>Suspicious Transaction Monitoring</h3>
+
+            <p>
+              Fraud monitoring application that identifies unusual transactions
+              using anomaly detection, transaction rules, and risk scoring to
+              support suspicious transaction analysis.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Scikit-learn</span>
+              <span>Streamlit</span>
+            </div>
+
+            <a
+              href="https://github.com/AzimRaza/Suspicious-Transaction-Monitoring"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub →
+            </a>
+          </div>
+
+          <!-- Disease Predictor -->
+          <div class="project-card">
+            <h3>Disease Predictor</h3>
+
+            <p>
+              Machine learning application that predicts possible diseases based
+              on user-provided symptoms using a Gradient Boosting Classifier.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Scikit-learn</span>
+              <span>Streamlit</span>
+            </div>
+
+            <a
+              href="https://github.com/AzimRaza/Disease-Predictor"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub →
+            </a>
+          </div>
+
+          <!-- Object Detection System -->
+          <div class="project-card">
+            <h3>Object Detection System</h3>
+
+            <p>
+              Computer vision project for detecting objects in images and video
+              using Python, OpenCV, and YOLO-based object detection techniques.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>OpenCV</span>
+              <span>YOLO</span>
+            </div>
+
+            <a
+              href="https://github.com/AzimRaza/Object-Detection-System"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="section-label">EXPERIENCE</p>
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+          <h3>Python / Data Science Intern</h3>
+          <h4>Softpro India Computer Technologies Pvt. Ltd.</h4>
+          <p>
+            Worked with Python, data analysis and machine learning concepts
+            while developing analytical solutions.
+          </p>
+        </div>
+
+        <div class="experience-item">
+          <h3>Web Developer Intern</h3>
+          <h4>Internship Fusion</h4>
+          <p>
+            Worked on web development using HTML, CSS, JavaScript and related
+            technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <p class="section-label">EDUCATION</p>
+        <h2>Education</h2>
+
+        <div class="education-item">
+          <h3>B.Tech — Computer Science & Engineering</h3>
+          <p>Ashoka Institute of Technology and Management, Varanasi</p>
+          <span>CGPA: 7.9</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <p class="section-label">CERTIFICATIONS</p>
+        <h2>Certifications</h2>
+
+        <div class="certifications-grid">
+          <div class="cert-card">
+            <h3>SQL (Intermediate)</h3>
+            <p>HackerRank</p>
+          </div>
+
+          <div class="cert-card">
+            <h3>SQL (Basic)</h3>
+            <p>HackerRank</p>
+          </div>
+
+          <div class="cert-card">
+            <h3>Python (Basic)</h3>
+            <p>HackerRank</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <p class="section-label">CONTACT</p>
+        <h2>Let's connect.</h2>
+
+        <p>Interested in working together or discussing an opportunity?</p>
+
+        <div class="contact-links">
+          <a href="mailto:azimraza4213@gmail.com">Email</a>
+          <a
+            href="https://github.com/AzimRaza"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/azim-raza-86ab05293/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Azim Raza. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
